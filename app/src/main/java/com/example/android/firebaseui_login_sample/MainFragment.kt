@@ -49,10 +49,10 @@ class MainFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         observeAuthenticationState()
 
-        binding.settingsButton.setOnClickListener {
-            val action = MainFragmentDirections.actionMainFragmentToSettingsFragment()
-            findNavController().navigate(action)
-        }
+        // TODO set an onClickListener for settings_btn so that tapping the button will navigate the
+        //  user to customizeFragment. Don’t worry if you see unresolved errors as you
+        //  implementation action! If you see unresolved errors, you can recompile the app from the
+        //  Build menu to generate and use the new navigation actions you just created in the xml.
     }
 
     /**
